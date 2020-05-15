@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700|Playfair+Display:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/et-line.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.min.css" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Création grille d'accords</title>
+
+	<style>
+		#slider-subscribe-form .input-group {
+			background-color: #FFF;
+			border: 1px solid #EEE;
+			border-radius: 3px;
+			box-shadow: 0 0 30px 4px rgba(0,0,0,0.15);
+			border-left: 3px solid red;
+		}
+
+		#slider-subscribe-form input {
+			box-shadow: none;
+			border: 0;
+			height: 64px;
+			padding-left: 1.25rem;
+		}
+
+		#slider-subscribe-form .input-group { align-items: center; }
+
+		#slider-subscribe-form .form-control.error { background-color: #ffe6e6; }
+
+		.social-icon { margin-left: 8px; }
+
+		#slider-subscribe-form { width: 125%; }
+
+		.device-sm #slider-subscribe-form,
+		.device-xs #slider-subscribe-form { width: 100%; }
+	</style>
+
+</head>
+
+<body class="stretched side-push-panel">
+
+<div class="body-overlay"></div>
+
+	<div id="side-panel" class="dark">
+
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+
+		<div class="side-panel-wrap">
+
+			<div class="widget widget_links clearfix">
+
+				<h4>Qui sommes nous ?</h4>
+
+				<div style="font-size: 14px; line-height: 1.7;">
+					<address style="line-height: 1.7;">
+						795 Folsom Ave, Suite 600<br>
+						San Francisco, CA 94107<br>
+					</address>
+
+					<div class="clear topmargin-sm"></div>
+
+					<abbr title="Phone Number">Phone:</abbr> (91) 8547 632521<br>
+					<abbr title="Fax">Fax:</abbr> (91) 11 4752 1433<br>
+					<abbr title="Email Address">Email:</abbr> info@canvas.com
+				</div>
+
+			</div>
+
+			<div class="widget clearfix">
+
+				<h4>Réseaux sociaux</h4>
+
+				<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
+					<i class="icon-facebook"></i>
+					<i class="icon-facebook"></i>
+				</a>
+				<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
+					<i class="icon-twitter"></i>
+					<i class="icon-twitter"></i>
+				</a>
+				
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" >
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img src="images/canvasone.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img src="images/canvasone@2x.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						
+						<div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i class="icon-reorder"></i></a></div>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element slider-parallax full-screen">
+
+			<div class="slider-parallax-inner">
+
+				<div class="row clearfix">
+					<div class="col-xl-5 col-md-6 full-screen" style="background-color: #FFF;">
+						<div class="vertical-middle subscribe-widget" data-loader="button">
+							<div class="col-padding">
+								<div class="heading-block nobottomborder leftmargin-sm">
+									<h1 class="nott t400" style="line-height: 1.4;font-size: 48px; font-family: 'Playfair Display'; font-weight: normal">Type and Subscribe</h1>
+									<span class="" style="font-size:16px; top-margin: 20px;" class="t300">Deals, Coupon Codes &amp; Insider Tips to get the Best out of our Products &amp; Services.</span>
+								</div>
+								<div class="widget-subscribe-form-result"></div>
+								<form id="slider-subscribe-form" action="../include/subscribe.php" method="post" class="nobottommargin">
+									<div class="input-group">
+										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control input-lg not-dark required email" placeholder="Enter your Email Address.." style="">
+
+										<div class="input-group-append">
+											<button href="#" class="button nobg" type="submit" style="color: #222; text-shadow: none;"><i class="icon-line-arrow-right" style="font-size: 24px; line-height: 40px" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow"></i></button>
+										</div>
+									</div>
+								</form>
+								
+							</div>
+						</div>
+						<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow"><i class="icon-line-arrow-down infinite animated fadeInDown"></i></a>
+					</div>
+
+					<div class="col-xl-7 col-md-6 full-screen center nopadding" style="background: url('images/page/op-subscription.jpg') center center no-repeat; background-size: cover; z-index: -1">
+						<div class="vertical-middle dark center clearfix">
+
+							<div class="emphasis-title nobottommargin">
+								<h1>
+									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
+										<span class="t-rotate t700 font-body opm-medium-word">canvas.|different.|creative.|digital.|vision.</span>
+									</span>
+								</h1>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #slider end -->
+
+		<!-- Content GRID drag and drop or clic popup
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap nopadding">
+
+				<div id="section-about" class="center page-section">
+
+					<div class="row">
+						<div class="col-md-12">
+						<!-- GRID drag and drop or clic popup
+								============================================= -->
+						
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark noborder">
+
+			<div class="container center">
+				<div class="footer-widgets-wrap">
+
+					<div class="row divcenter clearfix">
+
+						<div class="col-lg-4">
+
+							<div class="widget clearfix">
+								<h4>Site Links</h4>
+
+								<ul class="list-unstyled footer-site-links nobottommargin">
+									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
+									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
+									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
+									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
+									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
+									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="widget subscribe-widget clearfix" data-loader="button">
+								<h4>Subscribe</h4>
+
+								<div class="widget-subscribe-form-result"></div>
+								<form id="widget-subscribe-form" action="../include/subscribe.php" method="post" class="nobottommargin">
+									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
+									<button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
+								</form>
+							</div>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="widget clearfix">
+								<h4>Contact</h4>
+
+								<p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
+
+								<div class="center topmargin-sm">
+									<a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a>
+									<a href="#" class="social-icon inline-block noborder si-small si-pinterest" title="Pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div id="copyrights">
+				<div class="container center clearfix">
+					Copyright Canvas 2015 | All Rights Reserved
+				</div>
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<!-- Entire bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.js"></script>
+	<!-- legacy bundle for older browsers (IE11) -->
+	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.legacy.js">
+	
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.all.js"></script>	
+
+	
+</body>
+</html>
