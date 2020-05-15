@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
+
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -7,7 +8,9 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700|Playfair+Display:400,700" rel="stylesheet" type="text/css" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,700|Playfair+Display:400,700"
+		rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/onepage.css" type="text/css" />
@@ -18,8 +21,8 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.min.css" /> -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.css" type="text/css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title
@@ -31,7 +34,7 @@
 			background-color: #FFF;
 			border: 1px solid #EEE;
 			border-radius: 3px;
-			box-shadow: 0 0 30px 4px rgba(0,0,0,0.15);
+			box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.15);
 			border-left: 3px solid red;
 		}
 
@@ -42,27 +45,188 @@
 			padding-left: 1.25rem;
 		}
 
-		#slider-subscribe-form .input-group { align-items: center; }
+		#slider-subscribe-form .input-group {
+			align-items: center;
+		}
 
-		#slider-subscribe-form .form-control.error { background-color: #ffe6e6; }
+		#slider-subscribe-form .form-control.error {
+			background-color: #ffe6e6;
+		}
 
-		.social-icon { margin-left: 8px; }
+		.social-icon {
+			margin-left: 8px;
+		}
 
-		#slider-subscribe-form { width: 125%; }
+		#slider-subscribe-form {
+			width: 125%;
+		}
 
 		.device-sm #slider-subscribe-form,
-		.device-xs #slider-subscribe-form { width: 100%; }
+		.device-xs #slider-subscribe-form {
+			width: 100%;
+		}
+
+		.square {
+			border: 2px solid !important;
+		}
+
+		.square-col-1 {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+
+		.square-row-center {
+			display: flex;
+			justify-content: center;
+		}
+
+		.col-index {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		/*.col-index:hover {
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}*/
+
+		/* .popup {
+			height: 30px;
+			background: #1a75ff;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		} */
+
+		#split:hover {
+			color: white;
+		}
+
+		#add_content:hover {
+			color: white;
+		}
+
+		/* Important styles */
+		#toggle {
+			display: block;
+			width: 28px;
+			height: 30px;
+			margin: 30px auto 10px;
+		}
+
+		#toggle span:after,
+		#toggle span:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -9px;
+		}
+
+		#toggle span:after {
+			top: 9px;
+		}
+
+		#toggle span {
+			position: relative;
+			display: block;
+		}
+
+		#toggle span,
+		#toggle span:after,
+		#toggle span:before {
+			width: 100%;
+			height: 5px;
+			background-color: #888;
+			transition: all 0.3s;
+			backface-visibility: hidden;
+			border-radius: 2px;
+		}
+
+		/* on activation */
+		#toggle.on span {
+			background-color: transparent;
+		}
+
+		#toggle.on span:before {
+			transform: rotate(45deg) translate(5px, 5px);
+		}
+
+		#toggle.on span:after {
+			transform: rotate(-45deg) translate(7px, -8px);
+		}
+
+		#toggle.on+#menu {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		/* menu appearance*/
+		#menu {
+			/* position: relative; */
+			color: #999;
+			/* width: 200px; */
+			padding: 10px;
+			margin: auto;
+			font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+			text-align: center;
+			border-radius: 4px;
+			background: white;
+			box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+			/* just for this demo */
+			/* opacity: 0;
+			visibility: hidden; */
+			transition: opacity .4s;
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			/* background: black; */
+		}
+
+		/*#menu:after {
+			position: absolute;
+			top: -15px;
+			left: 95px;
+			content: "";
+			display: block;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 20px solid white;
+		}*/
+
+		ul,
+		li,
+		li a {
+			list-style: none;
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+
+		li a {
+			padding: 5px;
+			color: #888;
+			text-decoration: none;
+			transition: all .2s;
+		}
+
+		li a:hover,
+		li a:focus {
+			background: #1ABC9C;
+			color: #fff;
+		}
 	</style>
 
 </head>
 
 <body class="stretched side-push-panel">
 
-<div class="body-overlay"></div>
+	<div class="body-overlay"></div>
 
 	<div id="side-panel" class="dark">
 
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a>
+		</div>
 
 		<div class="side-panel-wrap">
 
@@ -97,7 +261,7 @@
 					<i class="icon-twitter"></i>
 					<i class="icon-twitter"></i>
 				</a>
-				
+
 
 			</div>
 
@@ -111,7 +275,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full" >
+		<header id="header" class="full-header transparent-header static-sticky" data-sticky-offset="full">
 
 			<div id="header-wrap">
 
@@ -122,16 +286,19 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo">
-						<a href="index.html" class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img src="images/canvasone.png" alt="Canvas Logo"></a>
-						<a href="index.html" class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img src="images/canvasone@2x.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="images/canvasone-dark.png"><img
+								src="images/canvasone.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo" data-dark-logo="images/canvasone-dark@2x.png"><img
+								src="images/canvasone@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
 					============================================= -->
 					<nav id="primary-menu">
 
-						
-						<div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i class="icon-reorder"></i></a></div>
+
+						<div id="side-panel-trigger" class="side-panel-trigger"><a href="#"><i
+									class="icon-reorder"></i></a></div>
 
 					</nav><!-- #primary-menu end -->
 
@@ -152,32 +319,50 @@
 						<div class="vertical-middle subscribe-widget" data-loader="button">
 							<div class="col-padding">
 								<div class="heading-block nobottomborder leftmargin-sm">
-									<h1 class="nott t400" style="line-height: 1.4;font-size: 48px; font-family: 'Playfair Display'; font-weight: normal">Type and Subscribe</h1>
-									<span class="" style="font-size:16px; top-margin: 20px;" class="t300">Deals, Coupon Codes &amp; Insider Tips to get the Best out of our Products &amp; Services.</span>
+									<h1 class="nott t400"
+										style="line-height: 1.4;font-size: 48px; font-family: 'Playfair Display'; font-weight: normal">
+										Type and Subscribe</h1>
+									<span class="" style="font-size:16px; top-margin: 20px;" class="t300">Deals, Coupon
+										Codes &amp; Insider Tips to get the Best out of our Products &amp;
+										Services.</span>
 								</div>
 								<div class="widget-subscribe-form-result"></div>
-								<form id="slider-subscribe-form" action="../include/subscribe.php" method="post" class="nobottommargin">
+								<form id="slider-subscribe-form" action="../include/subscribe.php" method="post"
+									class="nobottommargin">
 									<div class="input-group">
-										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control input-lg not-dark required email" placeholder="Enter your Email Address.." style="">
+										<input type="email" id="widget-subscribe-form-email"
+											name="widget-subscribe-form-email"
+											class="form-control input-lg not-dark required email"
+											placeholder="Enter your Email Address.." style="">
 
 										<div class="input-group-append">
-											<button href="#" class="button nobg" type="submit" style="color: #222; text-shadow: none;"><i class="icon-line-arrow-right" style="font-size: 24px; line-height: 40px" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow"></i></button>
+											<button href="#" class="button nobg" type="submit"
+												style="color: #222; text-shadow: none;"><i class="icon-line-arrow-right"
+													style="font-size: 24px; line-height: 40px"
+													data-scrollto="#section-about" data-easing="easeInOutExpo"
+													data-speed="1250" data-offset="65"
+													class="one-page-arrow"></i></button>
 										</div>
 									</div>
 								</form>
-								
+
 							</div>
 						</div>
-						<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow"><i class="icon-line-arrow-down infinite animated fadeInDown"></i></a>
+						<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250"
+							data-offset="65" class="one-page-arrow"><i
+								class="icon-line-arrow-down infinite animated fadeInDown"></i></a>
 					</div>
 
-					<div class="col-xl-7 col-md-6 full-screen center nopadding" style="background: url('images/page/op-subscription.jpg') center center no-repeat; background-size: cover; z-index: -1">
+					<div class="col-xl-7 col-md-6 full-screen center nopadding"
+						style="background: url('images/page/op-subscription.jpg') center center no-repeat; background-size: cover; z-index: -1">
 						<div class="vertical-middle dark center clearfix">
 
 							<div class="emphasis-title nobottommargin">
 								<h1>
-									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-										<span class="t-rotate t700 font-body opm-medium-word">canvas.|different.|creative.|digital.|vision.</span>
+									<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn"
+										data-speed="6000">
+										<span
+											class="t-rotate t700 font-body opm-medium-word">canvas.|different.|creative.|digital.|vision.</span>
 									</span>
 								</h1>
 							</div>
@@ -197,15 +382,66 @@
 			<div class="content-wrap nopadding">
 
 				<div id="section-about" class="center page-section">
+					<div class="row" style="padding-left: 25px;">
+						<div class="col-md-11">
+							<div id="grid">
+								<div class="row square-row-center row-index" id="row1">
+									<div class="col-4 col-sm-3 col-md-2 col-lg-1 square-col-1 col-index">
 
-					<div class="row">
-						<div class="col-md-12">
-						<!-- GRID drag and drop or clic popup
-								============================================= -->
-						
+										<div class="embed-responsive embed-responsive-1by1 text-center">
+											<div class="embed-responsive-item square">
+											</div>
+										</div>
 
+										<!-- <a href="#menu" id="toggle"><span></span></a> -->
+										<!-- <div id="menu">
+											<ul>
+												<li><a href="">Split</a></li>
+												<li><a href="">Add</a></li>
+												<li><a href="">Reset</a></li>
+											</ul>
+										</div> -->
+
+									</div>
+									<div class="col-4 col-sm-3 col-md-2 col-lg-1 square-col-1 col-index">
+										<div class="embed-responsive embed-responsive-1by1 text-center">
+											<div class="embed-responsive-item square"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row square-row-center row-index" id="row2">
+									<div class="col-4 col-sm-3 col-md-2 col-lg-1 square-col-1 col-index">
+										<div class="embed-responsive embed-responsive-1by1 text-center">
+											<div class="embed-responsive-item square"></div>
+										</div>
+									</div>
+									<div class="col-4 col-sm-3 col-md-2 col-lg-1 square-col-1 col-index">
+										<div class="embed-responsive embed-responsive-1by1 text-center">
+											<div class="embed-responsive-item square"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row square-row-center">
+								<div id="row-button" style="display: flex;padding-top: 15px">
+									<button type="button" class="btn btn-success" id="add_row"><i
+											class="fa fa-plus"></i></button>
+									<button type="button" class="btn btn-danger" id="remove_row"><i
+											class="fa fa-minus"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-1">
+							<div id="col-button"
+								style="display: flex;flex-direction: column; width: 40px;padding-top: 15px"">
+								<button type=" button" class="btn btn-success" id="add_col"><i class="fa fa-plus"></i></button>
+								<button type="button" class="btn btn-danger" id="remove_col"><i
+										class="fa fa-minus"></i></button>
+							</div>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</section><!-- #content end -->
@@ -225,12 +461,18 @@
 								<h4>Site Links</h4>
 
 								<ul class="list-unstyled footer-site-links nobottommargin">
-									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
-									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">Top</a></li>
+									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">About</a></li>
+									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">Works</a></li>
+									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">Services</a></li>
+									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">Blog</a></li>
+									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo"
+											data-speed="1250" data-offset="70">Contact</a></li>
 								</ul>
 							</div>
 
@@ -242,9 +484,14 @@
 								<h4>Subscribe</h4>
 
 								<div class="widget-subscribe-form-result"></div>
-								<form id="widget-subscribe-form" action="../include/subscribe.php" method="post" class="nobottommargin">
-									<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
-									<button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
+								<form id="widget-subscribe-form" action="../include/subscribe.php" method="post"
+									class="nobottommargin">
+									<input type="email" id="widget-subscribe-form-email"
+										name="widget-subscribe-form-email"
+										class="form-control form-control-lg not-dark required email"
+										placeholder="Your Email Address">
+									<button class="button button-border button-circle button-light topmargin-sm"
+										type="submit">Subscribe Now</button>
 								</form>
 							</div>
 
@@ -258,19 +505,23 @@
 								<p class="lead">795 Folsom Ave, Suite 600<br>San Francisco, CA 94107</p>
 
 								<div class="center topmargin-sm">
-									<a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
+									<a href="#" class="social-icon inline-block noborder si-small si-facebook"
+										title="Facebook">
 										<i class="icon-facebook"></i>
 										<i class="icon-facebook"></i>
 									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
+									<a href="#" class="social-icon inline-block noborder si-small si-twitter"
+										title="Twitter">
 										<i class="icon-twitter"></i>
 										<i class="icon-twitter"></i>
 									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
+									<a href="#" class="social-icon inline-block noborder si-small si-github"
+										title="Github">
 										<i class="icon-github"></i>
 										<i class="icon-github"></i>
 									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-pinterest" title="Pinterest">
+									<a href="#" class="social-icon inline-block noborder si-small si-pinterest"
+										title="Pinterest">
 										<i class="icon-pinterest"></i>
 										<i class="icon-pinterest"></i>
 									</a>
@@ -298,6 +549,87 @@
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="add_modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Content</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">A</button>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">B</button>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">C</button>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 15px;padding-bottom: 15px;">
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">D</button>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">E</button>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">F</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">G</button>
+								</div>
+								<div class="col-md-4">
+									<button type="button" class="btn btn-info btn-content-left">%</button>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<button type="button" class="btn btn-content-right"
+										style="width: 100%; background-color: #ff7675;border-color: #ff7675"><span
+											style="color: white">m</span></button>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 15px;padding-bottom: 15px;">
+								<div class="col-md-12">
+									<button type="button" class="btn btn-content-right"
+										style="width: 100%; background-color: #55efc4; border-color: #55efc4"><span
+											style="color: white">M</span></button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control" id="input-content"
+											placeholder="Type Anything." maxlength="3">
+										<small class="form-text text-muted" style="text-align: center;">3 characters are
+											available maximum</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="add_confirm" class="btn btn-primary">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<!-- External JavaScripts
 	============================================= -->
 	<script src="js/jquery.js"></script>
@@ -311,10 +643,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.js"></script>
 	<!-- legacy bundle for older browsers (IE11) -->
 	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.legacy.js">
-	
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/gridstack@1.1.1/dist/gridstack.all.js"></script>	
 
-	
+	</script>
+
+	<script src="js/grid.js">
+	</script>
+
 </body>
+
 </html>
